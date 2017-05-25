@@ -32,7 +32,7 @@ class Config(object):
 
         if headless:
             if not self.xvfb:
-                self.xvfb = _find_process('xvfb')
+                self.xvfb = _find_process('xvfb-run')
 
             try:
                 with open(self.xvfb) as f:
